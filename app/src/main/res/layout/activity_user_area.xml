@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp4r7.simplelogin.UserAreaActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24dp"
+        android:text="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvUsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:textSize="24dp"
+        android:text="UserName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="24dp"
+        android:text="E-Mail"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsr"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="8dp" />
+</android.support.constraint.ConstraintLayout>
